@@ -1,0 +1,160 @@
+/* 
+1-General Rules
+2-Inputs events
+3-Messages
+4-Media Queries
+*/
+
+/*1-General Rules
+----------------------------------------------------------*/
+.div-form {
+  display: flex;
+  z-index: 9998;
+}
+form {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--main-white-color);
+  text-align: center;
+  border-radius: 2em;
+  box-shadow: 0.5em 0.5em 1em var(--main-purple-color);
+  z-index: 999;
+}
+form div{
+  display: flex;
+  width: 100%;
+}
+label {
+  display: flex;
+  width: 100%;
+  margin: 2%;
+  flex-direction: column;
+  text-align: left;
+}
+input,
+textarea {
+  margin: 1% 0;
+  padding: 1% 4%;
+  background: linear-gradient(var(--linear-gradient-logo));
+  border: 0;
+  border-radius: 2em;
+  text-shadow: 0 0 0.5em var(--second-blue-color);
+}
+textarea {
+  flex-grow: 1;
+  font-family: Jost;
+  border-radius: 0;
+}
+.textarea-message {
+  flex-grow: 1;
+}
+button {
+  margin: 4%;
+  padding: 2% 10%;
+  font-family: Jost;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--main-grey-color);
+  border: 0em solid var(--main-grey-color);
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.5em var(--main-grey-color);
+  margin-left: auto;
+}
+
+/*2-Inputs events
+----------------------------------------------------------*/
+input:focus,
+textarea:focus {
+  color: var(--main-grey-color);
+  outline: 2px solid var(--second-green-color);
+  box-shadow: 0px 0px 0.5em var(--second-green-color);
+}
+input:valid,
+textarea:valid {
+  font-weight: 500;
+  color: var(--main-white-color);
+}
+input:-internal-autofill-selected {
+  background: linear-gradient(var(--linear-gradient-logo));
+}
+
+/*3-Messages
+----------------------------------------------------------*/
+.error-message p {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: var(--second-coral-color);
+  text-align: left;
+}
+
+.success-message {
+  flex-direction: column;
+  align-items: center;
+}
+.icon-plane {
+  font-size: 3.5em;
+}
+
+/*4-Media Queries
+----------------------------------------------------------*/
+/* Escritorio*/
+.div-form {
+  width: 30%;
+  height: 80%;
+}
+
+/* Tablet */
+@media (orientation: portrait) {
+  .div-form {
+    width: 80vw;
+  }
+  form {
+    font-size: 3vw;
+  }
+  input,
+  textarea {
+    font-size: 2.5vw;
+  }
+  .icon-plane {
+    font-size: 6vw;
+  }
+  .success-message p {
+    margin: 10% 5%;
+    font-size: 3vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 1290px) and (orientation: portrait) {
+  .div-form{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+  }
+  form {
+    font-size: 6vw;
+    font-size: 5vw;
+    border-radius: 0;
+  }
+  input,
+  textarea {
+    font-size: 5vw;
+  }
+  .success-message p {
+    font-size: 5vw;
+  }
+  .icon-plane {
+    font-size: 12vw;
+  }
+  button {
+    margin: 4% 0 20% 0;
+  }
+}

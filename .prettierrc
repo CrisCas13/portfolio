@@ -1,0 +1,19 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "plugins": ["stylelint-order"],
+    "sortOrder": "concentric-css",
+    "sortImports": true,
+    "overrides": [
+      {
+        "files": "*.css",
+        "options": {
+          "parser": "css",
+          "sortOrder": "concentric-css"
+        }
+      }
+    ]
+  }
