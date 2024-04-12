@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "eslint": "8.2.0",
+    "express": "^4.19.2",
     "postcss-sorting": "^8.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
     "react-hook-form": "^7.48.2",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

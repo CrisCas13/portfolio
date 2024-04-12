@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: http://cristinacasado.com
+Allow: https://cristinacasado.com

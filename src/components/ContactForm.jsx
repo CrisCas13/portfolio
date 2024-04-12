@@ -121,7 +121,7 @@ class ContactForm extends Component {
                   </label>
                 </div>
 
-                <button type="submit" disabled={isSending}>
+                <button className="button_submit" type="submit" disabled={isSending} style={{ backgroundColor: '#fff' }}>
                   {isSending ? 'Enviando...' : 'Enviar'}
                 </button>
               </>

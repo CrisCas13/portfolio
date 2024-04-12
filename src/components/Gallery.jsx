@@ -77,7 +77,7 @@ function Gallery({ closeGallery, selectedGallery, setSelectedGallery }) {
           style={{ display: currentIndex === 0 && imageLoaded ? 'flex' : 'none' }}
         >
           <img
-            src={selectedGallery.images[0].src}
+            src={window.innerWidth <= 768 ? selectedGallery.images[0].srcMobile : selectedGallery.images[0].src}
             alt={selectedGallery.images[0].alt}
             onLoad={() => setImageLoaded(true)}
           />
@@ -88,7 +88,7 @@ function Gallery({ closeGallery, selectedGallery, setSelectedGallery }) {
           style={{ display: currentIndex === 1 ? 'block' : 'none' }}
         >
           <img
-            src={selectedGallery.images[1].src}
+            src={window.innerWidth <= 768 ? selectedGallery.images[1].srcMobile : selectedGallery.images[1].src}
             alt={selectedGallery.images[1].alt}
           />
           <p>{selectedGallery.texts[0]}</p>
@@ -98,7 +98,7 @@ function Gallery({ closeGallery, selectedGallery, setSelectedGallery }) {
           style={{ display: currentIndex === 2 ? 'block' : 'none' }}
         >
           <img
-            src={selectedGallery.images[2].src}
+            src={window.innerWidth <= 768 ? selectedGallery.images[2].srcMobile : selectedGallery.images[2].src}
             alt={selectedGallery.images[2].alt}
           />
           <p>{selectedGallery.texts[1]}</p>
@@ -108,7 +108,7 @@ function Gallery({ closeGallery, selectedGallery, setSelectedGallery }) {
           style={{ display: currentIndex === 3 ? 'block' : 'none' }}
         >
           <img
-            src={selectedGallery.images[3].src}
+            src={window.innerWidth <= 768 ? selectedGallery.images[3].srcMobile : selectedGallery.images[3].src}
             alt={selectedGallery.images[3].alt}
           />
           <p>{selectedGallery.texts[2]}</p>
@@ -149,6 +149,7 @@ Gallery.propTypes = {
     images: PropTypes.arrayOf(
       PropTypes.shape({
         src: PropTypes.string.isRequired,
+        srcMobile: PropTypes.string.isRequired,
         alt: PropTypes.string.isRequired,
       })
     ).isRequired,

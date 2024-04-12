@@ -3,7 +3,7 @@ import MainMenu from './components/MainMenu.jsx';
 import ProjectsMenu from './components/ProjectsMenu.jsx';
 import ContactForm from './components/ContactForm.jsx';
 import Gallery from './components/Gallery.jsx';
-import { CgMenuGridO } from 'react-icons/cg';
+import { CgMenu } from 'react-icons/cg';
 import { SlClose } from "react-icons/sl";
 import './App.css';
 
@@ -52,7 +52,7 @@ function App() {
   return (
     <div id="app">
       <div className="menus">
-        <CgMenuGridO className="icon-menu" onClick={toggleMainMenu} />
+        <CgMenu className="icon-menu" onClick={toggleMainMenu} />
         {showMainMenu && (
           <MainMenu
             openProjectsMenu={openProjectsMenu}

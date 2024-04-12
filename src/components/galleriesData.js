@@ -22,6 +22,30 @@ import photoCristinaCasado1 from '../assets/photo-CristinaCasado-1-details-shado
 import photoCristinaCasado2 from '../assets/photo-CristinaCasado-2-details-materials.jpg';
 import photoCristinaCasado3 from '../assets/photo-CristinaCasado-3-details-walls.jpg';
 import photoCristinaCasado4 from '../assets/photo-CristinaCasado-4-details-nature.jpg';
+import aiCristinaCasado1Mobile from '../assets/ai-CristinaCasado-1-mental-heath.jpg';
+import aiCristinaCasado2Mobile from '../assets/ai-CristinaCasado-2-care.jpg';
+import aiCristinaCasado3Mobile from '../assets/ai-CristinaCasado-3-mental-heath.jpg';
+import aiCristinaCasado4Mobile from '../assets/ai-CristinaCasado-4-iberian-mythology.jpg';
+import designCristinaCasado1Mobile from '../assets/design-CristinaCasado-1-Mobile-product-design-cafe.jpg';
+import designCristinaCasado2Mobile from '../assets/design-CristinaCasado-2-Mobile-product-design-prints.jpg';
+import designCristinaCasado3Mobile from '../assets/design-CristinaCasado-3-Mobile-product-design-wallpaper.jpg';
+import designCristinaCasado4Mobile from '../assets/design-CristinaCasado-4-Mobile-product-design-photographs.jpg';
+import digitalArtCristinaCasado1Mobile from '../assets/digital-art-CristinaCasado-1-Mobile-paint-textures.jpg';
+import digitalArtCristinaCasado2Mobile from '../assets/digital-art-CristinaCasado-2-Mobile-paint-textures.jpg';
+import digitalArtCristinaCasado3Mobile from '../assets/digital-art-CristinaCasado-3-Mobile-paint-textures.jpg';
+import digitalArtCristinaCasado4Mobile from '../assets/digital-art-CristinaCasado-4-Mobile-paint-textures.jpg';
+import illustrationCristinaCasado1Mobile from '../assets/illustration-CristinaCasado-1-Mobile-fairy-tales-Lena.jpg';
+import illustrationCristinaCasado2Mobile from '../assets/illustration-CristinaCasado-2-Mobile-fairy-tales-ElRayoDeLuna.jpg';
+import illustrationCristinaCasado3Mobile from '../assets/illustration-CristinaCasado-3-Mobile-fairy-tales-Valentina.jpg';
+import illustrationCristinaCasado4Mobile from '../assets/illustration-CristinaCasado-4-Mobile-fairy-tales-LosPiojitosDeLaPrincesa.jpg';
+import paintCristinaCasado1Mobile from '../assets/paint-CristinaCasado-1-Mobile-chromotherapy.jpg';
+import paintCristinaCasado2Mobile from '../assets/paint-CristinaCasado-2-Mobile-chromotherapy.jpg';
+import paintCristinaCasado3Mobile from '../assets/paint-CristinaCasado-3-Mobile-chromotherapy.jpg';
+import paintCristinaCasado4Mobile from '../assets/paint-CristinaCasado-4-Mobile-chromotherapy.jpg';
+import photoCristinaCasado1Mobile from '../assets/photo-CristinaCasado-1-Mobile-details-shadow.jpg';
+import photoCristinaCasado2Mobile from '../assets/photo-CristinaCasado-2-Mobile-details-materials.jpg';
+import photoCristinaCasado3Mobile from '../assets/photo-CristinaCasado-3-Mobile-details-walls.jpg';
+import photoCristinaCasado4Mobile from '../assets/photo-CristinaCasado-4-Mobile-details-nature.jpg';
 
 
 const galleriesData = [
@@ -35,18 +59,22 @@ const galleriesData = [
     images: [
       {
         src: photoCristinaCasado1,
+        srcMobile: photoCristinaCasado1Mobile,
         alt: 'Fotografía Cristina Casado, Detalles, Sombras',
       }, 
       {
         src: photoCristinaCasado2,
+        srcMobile: photoCristinaCasado2Mobile,
         alt: 'Fotografía Cristina Casado, Detalles, Materiales',
       },
       {
         src: photoCristinaCasado3,
+        srcMobile: photoCristinaCasado3Mobile,
         alt: 'Fotografía Cristina Casado, Detalles, Paredes',
       },
       {
         src: photoCristinaCasado4,
+        srcMobile: photoCristinaCasado4Mobile,
         alt: 'Fotografía Cristina Casado, Detalles, Naturaleza',
       }
     ],
@@ -61,18 +89,22 @@ const galleriesData = [
     images: [
       {
         src: paintCristinaCasado1,
+        srcMobile: paintCristinaCasado1Mobile,
         alt: 'Pintura Cristina Casado, Cromoterapia',
       }, 
       {
         src: paintCristinaCasado2,
+        srcMobile: paintCristinaCasado2Mobile,
         alt: 'Pintura Cristina Casado, Cromoterapia',
       },
       {
         src: paintCristinaCasado3,
+        srcMobile: paintCristinaCasado3Mobile,
         alt: 'Pintura Cristina Casado, Cromoterapia',
       },
       {
         src: paintCristinaCasado4,
+        srcMobile: paintCristinaCasado4Mobile,
         alt: 'Pintura Cristina Casado, Cromoterapia',
       }
     ],
@@ -86,19 +118,23 @@ const galleriesData = [
     ],
     images: [
       {
-        src: designCristinaCasado1,
+        src: designCristinaCasado1, 
+        srcMobile: designCristinaCasado1Mobile,
         alt: 'Diseño Cristina Casado, Diseño de Producto, Cafetería',
       }, 
       {
         src: designCristinaCasado2,
+        srcMobile: designCristinaCasado2Mobile,
         alt: 'Diseño Cristina Casado, Diseño de Producto, Láminas',
       },
       {
         src: designCristinaCasado3,
+        srcMobile: designCristinaCasado3Mobile,
         alt: 'Diseño Cristina Casado, Diseño de Producto, Papel Pintado Pared',
       },
       {
         src: designCristinaCasado4,
+        srcMobile: designCristinaCasado4Mobile,
         alt: 'Diseño Cristina Casado, Diseño de Producto, Fotografías',
       }
     ],
@@ -113,18 +149,22 @@ const galleriesData = [
     images: [
       {
         src: aiCristinaCasado1,
+        srcMobile: aiCristinaCasado1Mobile,
         alt: 'IA Cristina Casado, Salud Mental',
       }, 
       {
         src: aiCristinaCasado2,
+        srcMobile: aiCristinaCasado2Mobile,
         alt: 'IA Cristina Casado, Cuidados',
       },
       {
         src: aiCristinaCasado3,
+        srcMobile: aiCristinaCasado3Mobile,
         alt: 'IA Cristina Casado, Salud Mental',
       },
       {
         src: aiCristinaCasado4,
+        srcMobile: aiCristinaCasado4Mobile,
         alt: 'IA Cristina Casado, Mitología de la Península Ibérica',
       }
     ],
@@ -139,18 +179,22 @@ const galleriesData = [
     images: [
       {
         src: digitalArtCristinaCasado3,
+        srcMobile: digitalArtCristinaCasado3Mobile,
         alt: 'Arte Digital Cristina Casado, Texturas',
       }, 
       {
         src: digitalArtCristinaCasado4,
+        srcMobile: digitalArtCristinaCasado4Mobile,
         alt: 'Arte Digital Cristina Casado, Texturas',
       },
       {
         src: digitalArtCristinaCasado1,
+        srcMobile: digitalArtCristinaCasado1Mobile,
         alt: 'Arte Digital Cristina Casado, Texturas',
       },
       {
         src: digitalArtCristinaCasado2,
+        srcMobile: digitalArtCristinaCasado2Mobile,
         alt: 'Arte Digital Cristina Casado, Texturas',
       }
     ],
@@ -165,18 +209,22 @@ const galleriesData = [
     images: [
       {
         src: illustrationCristinaCasado1,
+        srcMobile: illustrationCristinaCasado1Mobile,
         alt: 'Ilustración Cristina Casado, Álbum Ilustrado, Lena',
       }, 
       {
         src: illustrationCristinaCasado2,
+        srcMobile: illustrationCristinaCasado2Mobile,
         alt: 'Ilustración Cristina Casado, Álbum Ilustrado, El Rayo de Luna',
       },
       {
         src: illustrationCristinaCasado3,
+        srcMobile: illustrationCristinaCasado3Mobile,
         alt: 'Ilustración Cristina Casado, Álbum Ilustrado, Valentina',
       },
       {
         src: illustrationCristinaCasado4,
+        srcMobile: illustrationCristinaCasado4Mobile,
         alt: 'Ilustración Cristina Casado, Álbum Ilustrado, Los Piojitos de la Princesa',
       }
     ],

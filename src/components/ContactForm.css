@@ -52,7 +52,7 @@ textarea {
 .textarea-message {
   flex-grow: 1;
 }
-button {
+.button_submit {
   margin: 4%;
   padding: 2% 10%;
   font-family: Jost;
@@ -64,6 +64,7 @@ button {
   cursor: pointer;
   box-shadow: 0.1em 0.1em 0.5em var(--main-grey-color);
   margin-left: auto;
+  background-color: var(--main-white-color) !important;
 }
 
 /*2-Inputs events
@@ -154,7 +155,7 @@ input:-internal-autofill-selected {
   .icon-plane {
     font-size: 12vw;
   }
-  button {
+  .button_submit {
     margin: 4% 0 20% 0;
   }
 }

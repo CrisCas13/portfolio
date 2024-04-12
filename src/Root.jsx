@@ -3,27 +3,28 @@ import Loading from './components/Loading.jsx';
 import App from './App.jsx';
 import SocialMediaMenu from './components/SocialMediaMenu.jsx';
 import backgroundImg from './assets/ai-illustration-CristinaCasado-background-index.png';
+import mobileBackgroundImg from './assets/ai-illustration-CristinaCasado-Mobile-background-index.png';
 import './index.css';
 
 function Root() {
   const [isLoading, setIsLoading] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const isMobile = window.innerWidth <= 768;
+  const backgroundImage = isMobile ? mobileBackgroundImg : backgroundImg;
 
   useEffect(() => {
     const image = new Image();
     image.src = backgroundImg;
     image.onload = () => {
+      setIsLoading(false);
       setImageLoaded(true);
     };
     image.onerror = (error) => {
       console.error('Error loading image:', error);
+      setIsLoading(false); 
     };
-
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
   }, []);
-
+  
   return (
     <React.StrictMode>
       <div className="container">
@@ -41,11 +42,6 @@ function Root() {
             </header>
             {imageLoaded && (
               <>
-                <img
-                  className="background-img"
-                  src={backgroundImg}
-                  alt="background-image"
-                />
                 <div className="wrapper">
                   <App />
                   <footer>
@@ -53,6 +49,11 @@ function Root() {
                   </footer>
                   <SocialMediaMenu />
                 </div>
+                <img
+                  className="background-img"
+                  src={backgroundImage}
+                  alt="background-image"
+                />
               </>
             )}
           </>
